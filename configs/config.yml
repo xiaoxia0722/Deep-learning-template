@@ -1,0 +1,38 @@
+config_name: config_name
+
+dataset_name: dataset_name
+data_dir: ./data
+
+gpus: '0'
+manual_seed: 100
+cuda: True
+num_workers: 0
+
+output: ./output/
+mode: 'train'
+stamp: 'normal'
+state_epoch: 0
+epochs: 501
+batch_size: 16
+resume_epoch: 1
+resume_model_path: ./output/
+tensorboard: True
+params: False
+
+opt:
+  lr: 0.01
+  beta1: 0.0
+  beta2: 0.9
+
+print_step: 500
+
+model: None
+
+test_interval: 5
+save_interval: 5
+
+sample_times: 1
+samples_save_dir: ./samples/coco/
+
+save_image: True
+    
